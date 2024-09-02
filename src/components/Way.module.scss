@@ -1,0 +1,112 @@
+.waySection {
+  background-color: #071211;
+  padding: 6rem 0;
+  text-align: center;
+  background-image: url('/image/ellipse-green.png'), url('/image/ellipse-green.png');
+  background-size: 1200px;
+  background-position: left -400px bottom -400px, right -400px top -400px;
+  background-repeat: no-repeat;
+}
+
+.title {
+  color: #fff;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  max-width: 40%;
+  margin: 0 auto 3rem auto;
+
+}
+
+.wayContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.wayItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 30%;
+  margin: 4rem 0;
+}
+
+.wayImage {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.wayTitle {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.wayDescription {
+  color: #fff;
+  font-size: .9rem;
+  letter-spacing: 1px;
+  margin-top: 2rem;
+  line-height: 140%;
+}
+
+.wayText {
+  color: #fff;
+  font-size: 1.1rem;
+  max-width: 40%;
+  text-align: center;
+  margin-bottom: 16%;
+  line-height: 140%;
+}
+
+.info {
+  text-align: center;
+  max-width: 45%;
+  margin: 4rem auto 2rem auto;
+  color: #fff;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  line-height: 140%;
+}
+
+@media (max-width: 800px) {
+  .waySection {
+    padding: 2rem 20px;
+
+    .title {
+      max-width: 100%;
+      font-size: 1.4rem;
+      margin-bottom: 0;
+    }
+
+    .wayContent {
+      flex-direction: column;
+      max-width: 100%;
+      gap: 0;
+    }
+
+    .wayItem {
+      max-width: 100%;
+      margin: 2rem 0;
+    }
+
+    .wayText {
+      max-width: 100%;
+      margin-bottom: 0;
+    }
+
+    .info {
+      max-width: 100%;
+      margin: 0 0 2rem auto;
+      font-size: 1rem;
+    }
+  }
+}

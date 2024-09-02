@@ -1,0 +1,25 @@
+{
+  "name": "5x",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export", 
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "14.2.6",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20.16.1",
+    "@types/react": "^18.3.4",
+    "@types/react-dom": "^18",
+    "eslint": "^9.9.1",
+    "sass": "^1.77.8",
+    "typescript": "^5.5.4"
+  }
+}

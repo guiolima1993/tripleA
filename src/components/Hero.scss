@@ -1,0 +1,69 @@
+.hero-section {
+  padding: 2rem 0 0 0;
+  background-image: url('/image/bg-hero-aaa.webp');
+  background-size: cover;
+  background-position: right top;
+  background-repeat: no-repeat;
+  text-align: center;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .hero-image {
+    max-width: 340px;
+    display: flex;
+    margin: 0 auto 2rem auto;
+  }
+
+  &-title {
+    color: #fff;
+    max-width: 70%;
+    margin: 1rem auto;
+    text-align: center;
+    font-size: 2.1rem;
+  }
+
+  &-subtitle {
+    color: #fff;
+    font-size: 1rem;
+    max-width: 70%;
+    margin: 0 auto 1rem auto;
+  }
+
+  &-security {
+    width: 100%;
+    max-width: 50%;
+    display: flex;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  @media (max-width: 800px) {
+    min-height: 100%;
+    padding: 4rem 0 0 0;
+
+    .logoA {
+      width: fit-content;
+      height: auto;
+      max-width: 140px;
+      margin-bottom: 1rem;
+    }
+
+    &-title {
+      font-size: 1.5rem;
+      max-width: 100%;
+    }
+
+    &-subtitle {
+      font-size: 1rem;
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 800px) {
+    background-position: left;
+  }
+}

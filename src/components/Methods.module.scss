@@ -1,0 +1,290 @@
+.mob {
+  display: none;
+
+  .mobLogo {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 70%;
+    margin: 2rem auto;
+
+    h3 {
+      font-size: 1.2rem;
+      color: #fff;
+      margin-bottom: 1.3rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #fff;
+    }
+  }
+
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.customSection {
+  text-align: center;
+  padding: 10rem 20px 0 20px;
+  position: relative;
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(/image/ellipses-met.png);
+    background-position: center top 100px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 3;
+    opacity: .7;
+  }
+
+  .title {
+    font-size: 2.2rem;
+    color: #fff;
+  }
+
+  .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+  }
+
+  .imageWrapper {
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    display: flex;
+    margin: -2rem auto 0 auto;
+    z-index: 3;
+  }
+
+  .centerImage {
+    width: 100%;
+    height: auto;
+  }
+
+  .card {
+    position: absolute;
+    border-radius: 10px;
+    padding: 40px 20px 20px 20px;
+    width: 370px;
+    text-align: center;
+    z-index: 2;
+
+    h3 {
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+
+    p {
+      font-weight: 200;
+      letter-spacing: 1px;
+      text-align: center;
+      line-height: 140%;
+      color: #fff;
+      position: relative;
+      z-index: 4;
+    }
+  }
+
+  .topCard {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .leftCard {
+    top: 55%;
+    left: 8%;
+    transform: translateY(-50%);
+
+    p {
+      max-width: 80%;
+      display: flex;
+      margin: 0 auto;
+    }
+  }
+
+  .rightCard {
+    top: 55%;
+    right: 8%;
+    transform: translateY(-50%);
+  }
+
+  .line {
+    position: absolute;
+    z-index: 1;
+    width: 70%;
+    margin: 0 auto;
+    left: 50% !important;
+    top: -20% !important;
+    transform: translateX(-50%);
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .lineTwo {
+      max-width: 90%;
+    }
+
+    .lineTree {
+      max-width: 80%;
+    }
+  }
+
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+
+.down {
+  width: 100%;
+  padding: 2rem 0;
+  margin-top: -200px;
+
+  .downTitle {
+    text-align: center;
+    color: #fff;
+    font-size: 2.2rem;
+    line-height: 130%;
+  }
+
+  .downText {
+    font-size: 1.4rem;
+    font-weight: 200;
+    max-width: 80%;
+    display: flex;
+    margin: 1rem auto 0 auto;
+    text-align: center;
+    line-height: 140%;
+    color: #fff;
+  }
+
+  .downArrow {
+    display: flex;
+    margin: 10rem auto 0 auto;
+    animation: move 1.8s ease-out infinite;
+
+    @keyframes move {
+      25% {
+        opacity: 1;
+        transform: translateY(5px);
+      }
+      33% {
+        opacity: 1;
+        transform: translateY(10px);
+      }
+      67% {
+        opacity: 1;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+
+  .lines {
+    height: 170px;
+    width: 100%;
+    background-image: url('/image/arrow-lines.svg');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 3rem 0 0 0;
+  }
+
+  @media (max-width: 800px) {
+    margin-top: 0;
+    padding-top: 0;
+
+    .downTitle {
+      font-size: 2rem;
+    }
+
+    .downText {
+      max-width: 100%;
+      font-size: 1rem;
+      padding: 0 20px;
+      margin-bottom: 3rem;
+    }
+
+    .downArrow {
+      margin-top: 1rem;
+    }
+
+    .lines {
+      background-size: cover;
+    }
+  }
+}
+
+.list {
+  padding: 4rem 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 450px;
+
+  .listTitle {
+    text-align: left;
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .listContent {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: flex;
+      align-items: start;
+      gap: 10px;
+      margin-top: 2rem;
+
+      p {
+        color: #fff;
+        letter-spacing: 1px;
+        font-weight: 200;
+
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    padding: 0 20px 2rem 20px;
+  }
+}

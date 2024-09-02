@@ -1,0 +1,246 @@
+
+.ceoContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 6rem 0;
+  background-color: transparent;
+  background-image: url('/image/ellipse-green.png');
+  background-size: 1000px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.ceoContent {
+  .ceoImage {
+    width: 100%;
+    height: auto;
+    margin-bottom: -16rem;
+    border-top-left-radius: 40px; 
+    border-top-right-radius: 40px;
+  }
+
+  .texts {
+
+    .textsInfo {
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+      font-weight: 200;
+    }
+  
+    .textsName {
+      font-size: 80px;
+      letter-spacing: 2px;
+      color: #fff;
+  
+      .check {
+        max-width: 40px;
+        width: 100%;
+        height: auto;
+      }
+    }
+  
+    .text {
+      font-size: 1.4rem;
+      color: #fff;
+      margin-top: 15px;
+      letter-spacing: 1px;
+    }
+
+    .list {
+      margin: 4rem 0;
+  
+      li {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        gap: 20px;
+        border-bottom: 2px solid transparent;
+        border-image: linear-gradient(to right, #318b54, #000000) 1;
+        padding-bottom: 2rem;
+  
+        .bgIcon {
+          background-color: #318b54;
+          border-radius: 50%;
+          width: 70px;
+          height: 70px;
+          max-width: 70px;
+          max-height: 70px;
+          min-width: 70px;
+          min-height: 70px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 5px;
+  
+          img {
+            width: 100%;
+            max-width: 80%;
+            display: flex;
+            margin: 0 auto;
+            height: auto;
+          }
+        }
+  
+        p {
+          color: #fff;
+          font-weight: 200;
+          letter-spacing: 1px;
+          margin: 0;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
+
+  .colorYellow {
+    color: #318b54;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+  }
+
+  .colorWhite {
+    color: #fff;
+    margin: 1.5rem 0;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+  }
+}
+
+.logoFaq {
+  margin: 4rem auto;
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  display: flex;
+}
+
+.accordionSection {
+  margin: 40px 0 4rem 0;
+
+  .accordionTitle {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: #Fff;
+    margin-bottom: 20px;
+  }
+
+  .accordionItem {
+    margin-bottom: 1rem;
+
+    .accordionHeader {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      background-color: #0B2925;
+      color: #fff;
+
+      .accordionIcon {
+        width: 20px;
+        height: 20px;
+      }
+
+      .question {
+        font-size: 1.3rem;
+        color: #fff;
+        letter-spacing: 1px;
+      }
+    }
+
+    .accordionContent {
+      padding: 15px 20px;
+      color: #fff;
+      letter-spacing: 1px;
+      border-top: none;
+      border-radius: 0 0 5px 5px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .ceoContainer {
+    padding: 0 0 2rem 0;
+    background-position: right top;
+    background-repeat: repeat;
+  }
+
+  .ceoContent {
+    .ceoImage {
+      border-radius: 0;
+      margin-bottom: -7rem;
+    }
+
+    .ceoTitle {
+      font-size: 1.3rem;
+      padding: 0 20px;
+    }
+
+    .texts {
+      padding: 0 20px;
+    }
+
+    .textsInfo {
+      font-size: 1.2rem !important;
+    }
+
+    .textsName {
+      font-size: 40px !important;
+
+      .check {
+        max-width: 30px !important;
+      }
+    }
+
+    .text {
+      font-size: 1rem !important;
+    }
+
+    .list {
+      li {
+        .bgIcon {
+          max-width: 40px !important;
+          max-height: 40px !important;
+          min-width: 40px !important;
+          min-height: 40px !important;
+        }
+
+        p {
+          font-size: 1rem !important;
+        }
+      }
+    }
+
+    .colorYellow,
+    .colorWhite {
+      font-size: 1rem;
+    }
+  }
+
+  .accordionSection {
+    padding: 0 20px;
+
+    .accordionTitle {
+      font-size: 1.3rem;
+    }
+
+    .accordionHeader {
+      .accordionIcon {
+        margin-left: 1rem;
+      }
+    }
+
+    .accordionContent {
+      font-size: .9rem;
+      padding: 10px;
+    }
+  }
+
+  .logoFaq {
+    max-width: 200px;
+  }
+}

@@ -1,0 +1,228 @@
+.cardPriceWrapper {
+  position: relative;
+  padding: 4rem;
+  background-color: #071211;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 3rem auto;
+  overflow: visible;
+  background-image: url(/image/ellipse-green.png);
+  background-position: right top;
+  background-size: contain;
+  border: 1px solid #305735;
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  margin: 0 auto 2rem auto;
+  max-width: 180px;
+}
+
+.productImage {
+  width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  max-width: 90%;
+  display: flex;
+}
+
+.title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #fff;
+  max-width: 60%;
+  display: flex;
+  margin: 1rem auto;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.itemList {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  width: fit-content;
+  margin: 2rem auto;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  justify-content: center;
+  width: fit-content;
+  gap: 12px;
+}
+
+.icon {
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+}
+
+.description {
+  flex: 1;
+  color: #fff;
+}
+
+.price {
+  color: #fff;
+  font-weight: 200;
+  text-transform: uppercase;
+  position: relative;
+
+  &:after {
+    content: "";
+    width: 100%;
+    height: 1.5px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(-5deg);
+    z-index: 11;
+  }
+}
+
+.dashedBorder {
+  width: 30%;
+  border-bottom: 5px dashed #303257;
+  margin: 1rem auto;
+}
+
+.oldPrice {
+  color: #fff;
+  margin: 2rem auto 1rem auto;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: normal;
+  position: relative;
+  width: fit-content;
+
+
+  &::after {
+    content: "";
+    width: 60%;
+    height: 2.5px;
+    background-color: red;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(-5deg);
+    z-index: 11;
+  }
+}
+
+.priceText {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.finalPrice {
+  font-size: 2.8rem;
+  font-weight: bolder;
+  color: #3EDF75;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cashPrice {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 2rem;
+}
+
+.topRightImage,
+.bottomLeftImage {
+  position: absolute;
+  width: 500px;
+  height: auto;
+}
+
+.topRightImage {
+  top: -18%;
+  right: -26%;
+  filter: drop-shadow(7px 6px 50px black);
+}
+
+.bottomLeftImage {
+  bottom: -22%;
+  left: -24%;
+  filter: drop-shadow(7px 6px 50px black);
+}
+
+@media (max-width: 800px) {
+  .cardPriceWrapper {
+    padding: 2rem 20px;
+    margin: 3rem 0;
+  }
+
+  .productImage {
+    max-width: 100%;
+    padding-left: 2rem;
+  }
+
+  .topRightImage,
+  .bottomLeftImage {
+    width: 300px;
+  }
+
+  .cardPriceWrapper {
+    padding: 4rem 2rem;
+  }
+
+  .topRightImage {
+    top: -16%;
+  }
+
+  .bottomLeftImage {
+    bottom: -19%;
+    left: -28%;
+  }
+
+  .dashedBorder {
+    width: 90%;
+  }
+
+  .title {
+    font-size: 1.2rem;
+    max-width: 100%;
+  }
+
+  .priceText {
+    font-size: 1.2rem;
+  }
+
+  .item {
+    p {
+      font-size: .7rem;
+    }
+  }
+
+  .icon {
+    img {
+      max-width: 20px !important;
+    }
+  }
+
+  .oldPrice {
+    font-size: 1.3rem;
+  }
+
+  .finalPrice {
+    font-size: 2rem;
+  }
+}

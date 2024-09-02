@@ -1,0 +1,76 @@
+.ctaSection {
+  padding: 6rem 6rem 8rem 6rem;
+  background-color: #071211;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 5rem;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card {
+  position: relative;
+  padding: 3rem 3.5rem 5rem 3.5rem;
+  background-color: #0B2925;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #fff;
+
+  &::after {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: #071211;
+    position: absolute;
+    bottom: -26px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+  }
+}
+
+.iconWrapper {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+}
+
+.description {
+  margin-top: 40px;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 800px) {
+  .ctaSection {
+    padding: 2rem 20px;
+  }
+
+  .title {
+    font-size: 1.7rem;
+  }
+
+  .cardGrid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+  }
+}

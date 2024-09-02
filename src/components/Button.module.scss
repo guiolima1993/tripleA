@@ -1,0 +1,53 @@
+.button {
+  background-color: var(--primary);
+  border: none;
+  padding: 1.2rem 2rem;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1rem;
+  display: flex;
+  margin: 1rem auto;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  font-weight: bold;
+  width: fit-content;
+  display: flex;
+  margin: 2rem auto;
+  animation: zoom-in-zoom-out 1.6s ease-out infinite;
+  text-align: center;
+  justify-content: center;
+  line-height: 170%;
+
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.1, 1.1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+}
+
+.image {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+  max-width: 600px;
+}
+
+@media (max-width: 800px) {
+  .button {
+    font-size: .7rem;
+    padding: 1rem;
+    max-width: 98%;
+    margin: 0 auto 1rem auto;
+  }
+
+  .image {
+    width: 100%;
+  }
+}
